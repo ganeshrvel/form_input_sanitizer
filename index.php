@@ -16,7 +16,7 @@ class input {
 			return $_POST[ $param ];
 		}
 
-		return "";
+		return null;
 	}
 
 	/*
@@ -29,7 +29,7 @@ class input {
 			return $_GET[ $param ];
 		}
 
-		return "";
+		return null;
 	}
 
 	/*
@@ -42,7 +42,7 @@ class input {
 			return $_REQUEST[ $param ];
 		}
 
-		return "";
+		return null;
 	}
 }
 
