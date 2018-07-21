@@ -19,7 +19,7 @@ Installation:
 
 Usage:
 
-    $input = new input;
+    $input = new \input\input();
 
 ----------
 
