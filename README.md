@@ -19,11 +19,15 @@ Installation:
 
 Usage:
 
+    $input = new input;
+
+----------
+
     Get method:
     #example: file.php?query1=value1&query2=value2
     
-    echo get_input( 'query1' );
-    echo get_input( 'query2' );
+    echo get( 'query1' );
+    echo get( 'query2' );
 
 
 ----------
@@ -31,8 +35,8 @@ Usage:
 
     Post method:
     
-    echo post_input( 'fullname' );
-    echo post_input( 'age' );
+    echo post( 'fullname' );
+    echo post( 'age' );
 
 
 ----------
@@ -40,5 +44,5 @@ Usage:
 
     Request Method:
     
-    echo request_input( 'query1' );
-    echo request_input( 'fullname' );
+    echo request( 'query1' );
+    echo request( 'fullname' );
