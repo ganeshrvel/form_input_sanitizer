@@ -11,38 +11,54 @@ URL: [https://github.com/ganeshrvel/form_input_sanitizer](https://github.com/gan
 
 
 Installation:
+Import or copy the methods from 'index.php'
 
-    Import or copy the methods from 'index.php'
+```php
+require_once "form_input_sanitizer/index.php";
+```
 
 ----------
 
 
 Usage:
+```php
+use input\input;
+$input = new input();
+```
 
-    $input = new \input\input();
-
-----------
-
-    Get method:
-    #example: file.php?query1=value1&query2=value2
-    
-    echo get( 'query1' );
-    echo get( 'query2' );
-
-
-----------
-
-
-    Post method:
-    
-    echo post( 'fullname' );
-    echo post( 'age' );
-
+Sanitization:
+```php
+$input->post( 'queryString', $trim = true, $isArray = false );
+$input->get( 'queryString', $trim = true, $isArray = false );
+$input->request( 'queryString', $trim = true, $isArray = false );
+```
 
 ----------
 
+  Get method:
+```php
+#example: file.php?query1=value1&query2=value2
+echo $input->get( 'query1' );
+echo $input->get( 'query2' );`
+```
 
-    Request Method:
+
+----------
+
+  Post method:
     
-    echo request( 'query1' );
-    echo request( 'fullname' );
+   ```php
+echo $input->post( 'fullname' );
+echo $input->post( 'age' );
+```
+
+
+----------
+
+
+   Request Method:
+   
+```php
+echo $input->request( 'query1' );
+echo $input->request( 'fullname' );
+```
